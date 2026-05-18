@@ -1,4 +1,4 @@
-voici layout.tsx du chemin app/layout.tsx import type { Viewport } from 'next'
+import type { Viewport } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
 import Script from "next/script"
 import './globals.css'
