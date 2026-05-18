@@ -1,9 +1,6 @@
-import type { Viewport } from 'next'
+voici layout.tsx du chemin app/layout.tsx import type { Viewport } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
 import Script from "next/script"
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
-
 import './globals.css'
 
 const playfair = Playfair_Display({
@@ -44,9 +41,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${playfair.variable} ${inter.variable} font-sans antialiased`}
-      >
+      <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
+
         {/* 🔐 Cloudflare Turnstile */}
         <Script
           src="https://challenges.cloudflare.com/turnstile/v0/api.js"
@@ -56,12 +52,6 @@ export default function RootLayout({
         />
 
         {children}
-
-        {/* 📊 Vercel Analytics */}
-        <Analytics />
-
-        {/* ⚡ Vercel Speed Insights */}
-        <SpeedInsights />
       </body>
     </html>
   )
