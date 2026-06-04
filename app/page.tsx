@@ -201,8 +201,6 @@ export default function Home() {
       © 2026 Leo OFM Elite — Private Creator Management
     </p>
   </footer>
-
-```tsx
     </div>
   )
 }
