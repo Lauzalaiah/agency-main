@@ -1,4 +1,3 @@
-:::writing{variant="document" id="52841"}
 "use client"
 
 import { useEffect, useState } from "react"
@@ -191,4 +190,3 @@ export default function ApplyForm() {
     </form>
   )
 }
-:::
