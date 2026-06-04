@@ -6,7 +6,16 @@ export async function POST(req: Request) {
   try {
     const body = await req.json()
 
-    const { name, instagram, country, email, token } = body
+    const {
+  name,
+  instagram,
+  country,
+  email,
+  platform,
+  revenue,
+  goals,
+  token,
+} = body
 
     // ✅ validation basique
     if (!name || !instagram || !country || !email) {
@@ -61,14 +70,17 @@ export async function POST(req: Request) {
     const supabase = createClient(supabaseUrl, supabaseKey)
 
     // 💾 sauvegarde Supabase
-    const { error } = await supabase.from("leads").insert([
-      {
-        name,
-        instagram,
-        email,
-        country,
-      },
-    ])
+   const { error } = await supabase.from("leads").insert([
+  {
+    name,
+    instagram,
+    email,
+    country,
+    platform,
+    revenue,
+    goals,
+  },
+])
 
     if (error) {
       console.error("SUPABASE ERROR:", error)
@@ -81,14 +93,20 @@ export async function POST(req: Request) {
 
     // 📩 envoi Telegram
     if (telegramToken && telegramChatId) {
-      const message = `
-🚀 New Lead
+     const message = `
+🚀 New Creator Application
 
 👤 Name: ${name}
 📸 Instagram: ${instagram}
 🌍 Country: ${country}
 📧 Email: ${email}
-      `
+
+📱 Platform: ${platform}
+💰 Revenue: ${revenue}
+
+🎯 Goals:
+${goals}
+`
 
       const telegramRes = await fetch(
         `https://api.telegram.org/bot${telegramToken}/sendMessage`,
