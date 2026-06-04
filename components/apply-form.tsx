@@ -37,12 +37,16 @@ export default function ApplyForm() {
     }
 
     const data = {
-      name: formData.get("name"),
-      instagram: formData.get("instagram"),
-      country: formData.get("country"),
-      email: formData.get("email"),
-      website: formData.get("website"),
-      token: captchaToken,
+  name: formData.get("name"),
+  instagram: formData.get("instagram"),
+  country: formData.get("country"),
+  email: formData.get("email"),
+  platform: formData.get("platform"),
+  revenue: formData.get("revenue"),
+  goals: formData.get("goals"),
+  website: formData.get("website"),
+  token: captchaToken,
+}
     }
 
     try {
