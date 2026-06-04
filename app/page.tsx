@@ -3,7 +3,8 @@
 import ApplyForm from "@/components/apply-form"
 
 export default function Home() {
-return ( <div className="bg-black text-white min-h-screen font-sans">
+  return (
+    <div className="bg-black text-white min-h-screen font-sans">
 
 ```
   {/* HEADER */}
@@ -201,8 +202,7 @@ return ( <div className="bg-black text-white min-h-screen font-sans">
     </p>
   </footer>
 
-</div>
-```
-
-)
+```tsx
+    </div>
+  )
 }
