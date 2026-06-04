@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <div className="bg-black text-white min-h-screen font-sans">
 
-```
   {/* HEADER */}
   <header className="flex justify-between items-center px-8 md:px-12 py-6 border-b border-yellow-500/10">
     <div>
