@@ -32,11 +32,9 @@ return ( <div className="bg-black text-white min-h-screen font-sans">
 
   {/* HERO */}
   <section className="relative min-h-screen flex items-center justify-center text-center px-6">
-
     <div className="absolute inset-0 bg-gradient-to-b from-yellow-500/10 via-transparent to-transparent blur-3xl" />
 
     <div className="relative z-10 max-w-5xl">
-
       <p className="uppercase tracking-[0.35em] text-xs text-yellow-500 mb-6">
         Exclusive Creator Partnerships
       </p>
@@ -60,9 +58,9 @@ return ( <div className="bg-black text-white min-h-screen font-sans">
       </div>
 
       <p className="text-gray-600 text-sm mt-8">
-        Only a limited number of creators are accepted each month.
+        Applications are reviewed individually.
+        We only partner with creators aligned with our long-term growth standards.
       </p>
-
     </div>
   </section>
 
@@ -72,7 +70,6 @@ return ( <div className="bg-black text-white min-h-screen font-sans">
     className="py-32 px-6 border-t border-yellow-500/10"
   >
     <div className="max-w-6xl mx-auto">
-
       <h2 className="text-center text-4xl font-serif text-yellow-500 mb-4">
         Our Services
       </h2>
@@ -82,7 +79,6 @@ return ( <div className="bg-black text-white min-h-screen font-sans">
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-
         <div className="border border-yellow-500/20 p-8 rounded-xl">
           <h3 className="text-yellow-500 mb-3">
             Creator Growth Strategy
@@ -120,7 +116,6 @@ return ( <div className="bg-black text-white min-h-screen font-sans">
             Strategic support, performance monitoring and guidance.
           </p>
         </div>
-
       </div>
     </div>
   </section>
@@ -128,7 +123,6 @@ return ( <div className="bg-black text-white min-h-screen font-sans">
   {/* STATS */}
   <section className="py-24 border-y border-yellow-500/10">
     <div className="flex flex-wrap justify-center gap-20 text-center">
-
       <div>
         <h4 className="text-yellow-500 text-3xl font-serif">
           Selective
@@ -155,7 +149,6 @@ return ( <div className="bg-black text-white min-h-screen font-sans">
           Growth-focused agency
         </p>
       </div>
-
     </div>
   </section>
 
@@ -169,19 +162,12 @@ return ( <div className="bg-black text-white min-h-screen font-sans">
     </h2>
 
     <div className="max-w-2xl mx-auto space-y-5 text-gray-300">
-
       <p>✓ Personalized creator management</p>
-
       <p>✓ Revenue optimization systems</p>
-
       <p>✓ Audience acquisition framework</p>
-
       <p>✓ Long-term brand development</p>
-
       <p>✓ Growth-focused strategy</p>
-
       <p>✓ Dedicated support</p>
-
     </div>
   </section>
 
@@ -191,7 +177,6 @@ return ( <div className="bg-black text-white min-h-screen font-sans">
     className="py-32 px-6 border-t border-yellow-500/10"
   >
     <div className="max-w-3xl mx-auto text-center">
-
       <h2 className="text-4xl font-serif text-yellow-500 mb-6">
         Apply For Private Management
       </h2>
@@ -206,7 +191,6 @@ return ( <div className="bg-black text-white min-h-screen font-sans">
       <p className="text-gray-600 text-sm mt-8">
         Only selected creators will be contacted.
       </p>
-
     </div>
   </section>
 
